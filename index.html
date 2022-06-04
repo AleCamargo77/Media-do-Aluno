@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de Notas</title>
+</head>
+
+<body>
+    <header>
+        <div class="faixa"></div>
+    </header>
+    <section class="container">
+        <h1>Calculadora de Notas</h1>
+        <h5>Preencha os campos com as notas.</h5>
+        <div class="note">
+            <div class="noteOne">
+                <label class="noteItem" for="1ª Nota">1ª Nota</label>
+                <input id="note1" type="number" placeholder="0 a 10">
+            </div>
+            <label for="2ª Nota">2ª Nota</label>
+            <input id="note2" type="number" placeholder="0 a 10">
+            <label for="3ª Nota">3ª Nota</label>
+            <input id="note3" type="number" placeholder="0 a 10">
+            <label for="4ª Nota">4ª Nota</label>
+            <input id="note4" type="number" placeholder="0 a 10">
+            <button onclick="calcular()">Resultado</button>
+            <div id="result"></div>
+        </div>
+        <span>Informações</span>
+        <ul>
+            <li>O aluno é aprovado se conseguir média maior ou igual a sete;</li>
+            <li>Se não conseguir atingir a média sete o aluno tem direito a um exame final;</li>
+            <li>No exame final é aprovado o aluno que atingir a média final cinco;</li>
+            <li>O aluno está automaticamente reprovado se obtiver média das atividades regulares menor que quatro.</li>
+        </ul>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>

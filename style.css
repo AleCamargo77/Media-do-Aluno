@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+
+header .faixa {
+    height: 20vh;
+    background: #151F39;
+}
+
+.container h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c4c4c5;
+    margin-top: 3em;
+}
+
+.container h5 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+.note {
+    display: flex;
+    gap: 0;
+    margin-top: 3em;
+    
+}
+
+.noteItem {
+    background: #151F39;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px;
+}
+
+#note1 {
+    height: 2.5rem;
+    width: 5rem;
+}
+
+.noteOne {
+    display: flex;
+
+}
+
+.noteOne input::placeholder {
+    font-size: 1.3em;
+}
