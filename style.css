@@ -11,26 +11,37 @@ header .faixa {
     background: #151F39;
 }
 
+.container {
+    width: 50%;
+    background: rgb(250, 244, 244);
+    overflow: hidden;
+    height: 90vh;
+    margin-top: -5rem;
+    box-shadow: 0 2px 5px black;
+}
+
 .container h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 2.5rem;
     color: #c4c4c5;
-    margin-top: 3em;
+    margin-top: .5em;
 }
 
 .container h5 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 1.5em;
-    margin-top: 1.5em;
+    margin-top: .5em;
 }
 
 .note {
     display: flex;
-    gap: 0;
-    margin-top: 3em;
-    
+    flex-wrap: wrap;
+    gap: 3em; 
+    width: 80%;
+    margin-top: 2em;
+
 }
 
 .noteItem {
@@ -41,16 +52,66 @@ header .faixa {
     padding: 10px;
 }
 
-#note1 {
+.note1 {
     height: 2.5rem;
     width: 5rem;
 }
 
 .noteOne {
     display: flex;
-
 }
 
 .noteOne input::placeholder {
     font-size: 1.3em;
+}
+
+button {
+    display: flex;
+    height: 2.5rem;
+    width: 15rem;
+    margin-top: 2rem;
+    background-color: #151F39;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: 0 2px 6px #343435;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#clear {
+    width: 8rem;
+    opacity: 0.7;
+}
+
+#clear:hover {
+    opacity: 1;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 0px;
+}
+
+ul {
+    margin-top: 1em;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    list-style: none;
+}
+
+#result {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
 }

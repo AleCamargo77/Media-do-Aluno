@@ -1,7 +1,14 @@
-//arrendondamento
+//arrendondamento aqui e na Calculadora para dois digitos após a virgula
+//falta fazer o calculo do exame
 //validação COM NOTA ZERO
 //FORMA DE ABREVIAR A CONDIÇÃO FALSE
-//BOOLEAN ???
+//USUARIO INCLUIR NOTAS
+//trocar texto em vermelho no resultado
+// integração do arq js no HTML no final ou no começo com deffer
+// Sistema de metas 
+// Sistema de Login
+// Loja Virtual x Landing Page
+
 
 function calcular() {
     const noteOne = parseFloat(document.getElementById('note1').value);
@@ -35,10 +42,18 @@ function calcular() {
             return 'Parabéns, você foi aprovado!';
         }
         else if (validateNote < 7 && validateNote >=4 ) {
-            return 'Cuidado, você está de exame';
+            return 'Cuidado, você está de exame!';
         }
         else if (validateNote < 4) {
             return 'Que pena, você já está reprovado.';
         }
     }
+}
+
+function clearField() {
+    note1.value = "";
+    note2.value = "";
+    note3.value = "";
+    note4.value = "";
+    result.innerText = "";
 }
