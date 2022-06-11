@@ -17,27 +17,43 @@
     <section class="container">
         <h1>Calculadora de Notas</h1>
         <h5>Preencha os campos com as notas.</h5>
-        <div class="note">
-            <div class="noteOne error">
+        <div class="note" id="notes">
+            <div class="noteOne">
                 <label class="noteItem" for="1ª Nota">1ª Nota</label>
-                <input class="note1" id="note1" type="number" placeholder="0 a 10">
+                <input class="note1" id="note1" type="number" onchange="validateGrade(this)" min="0" max="10"
+                    placeholder="0 a 10">
             </div>
-            <div class="noteOne error">
+            <div class="noteOne">
                 <label class="noteItem" for="2ª Nota">2ª Nota</label>
-                <input class="note1" id="note2" type="number" placeholder="0 a 10">
+                <input class="note1" id="note2" type="number" onchange="validateGrade(this)" min="0" max="10"
+                    placeholder="0 a 10">
             </div>
-            <div class="noteOne error">
+            <div class="noteOne">
                 <label class="noteItem" for="3ª Nota">3ª Nota</label>
-                <input class="note1" id="note3" type="number" placeholder="0 a 10">
+                <input class="note1" id="note3" type="number" onchange="validateGrade(this)" min="0" max="10"
+                    placeholder="0 a 10">
             </div>
-            <div class="noteOne error">
+            <div class="noteOne" id="gradeFour">
                 <label class="noteItem" for="4ª Nota">4ª Nota</label>
-                <input class="note1" id="note4" type="number" placeholder="0 a 10">
+                <input class="note1" id="note4" type="number" onchange="validateGrade(this)" min="0" max="10"
+                    placeholder="0 a 10">
             </div>
         </div>
-        <button onclick="calcular()">Resultado</button>
-        <button onclick="clearField()" id="clear">Limpar</button>
-        <div id="result"></div>
+        <div class="btn-container">
+            <button onclick="calculate()">Resultado</button>
+
+            <div class="btn-operations">
+                <button id="create-Grade" onclick="createGrade()">+</button>
+                <button id="remove-Grade" onclick="removeGrade()">-</button>
+
+                <div class="btn-clear">
+                    <button onclick="clearField()" id="clear">Limpar</button>
+
+                </div>
+
+            </div>
+            <div id="result"></div>
+        </div>
         <ul>
             <span><strong>Informações Importantes</strong></span>
             <li>O aluno é aprovado se conseguir média maior ou igual a sete;</li>
@@ -48,4 +64,5 @@
     </section>
     <script src="./main.js"></script>
 </body>
+
 </html>
