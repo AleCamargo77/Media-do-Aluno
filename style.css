@@ -6,7 +6,7 @@
     box-sizing: border-box;
     }
 
-header .faixa {
+header .range {
     height: 20vh;
     background: #151F39;
 }
@@ -19,7 +19,7 @@ header .faixa {
     margin-top: -5rem;
     padding-top: .8em;
     box-shadow: 0 2px 5px black;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .container h1 {
@@ -37,7 +37,7 @@ header .faixa {
     margin-top: .5em;
 }
 
-.note {
+.grade {
     display: flex;
     flex-wrap: wrap;
     gap: 3em; 
