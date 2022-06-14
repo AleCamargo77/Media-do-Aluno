@@ -46,7 +46,7 @@ header .range {
 
 }
 
-.noteItem {
+.grade-item {
     background: #151F39;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -54,16 +54,16 @@ header .range {
     padding: 10px;
 }
 
-.note1 {
+.grade-item-one {
     height: 2.5rem;
     width: 5rem;
 }
 
-.noteOne {
+.grade-content {
     display: flex;
 }
 
-.noteOne input::placeholder {
+.grade-content input::placeholder {
     font-size: 1.3em;
 }
 
