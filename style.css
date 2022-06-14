@@ -132,3 +132,9 @@ li {
     font-family: 'Roboto', sans-serif;
     margin-top: 1rem;
 }
+
+#phrases {
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    margin-top: 1em;
+}

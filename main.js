@@ -1,3 +1,15 @@
+let frases = ["Que a FORÇA esteja com você!",
+    "Desistir NUNCA foi uma opção.",
+    "Nunca foi sorte, sempre foi DEUS."
+];
+
+function incentive() {
+    let i = parseInt(Math.random() * 3);
+    return frases[i];
+}
+
+document.getElementById('phrases').innerHTML = incentive();
+
 function createGrade() {
     let mainDiv = document.createElement('div');
     mainDiv.classList.add('grade-content');
@@ -67,7 +79,6 @@ function classifyNote(validation) {
         };
     }
 }
-
 
 function clearField() {
     let baseDiv = document.getElementById('grades');
