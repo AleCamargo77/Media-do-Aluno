@@ -10,29 +10,43 @@ function incentive() {
 
 document.getElementById('phrases').innerHTML = incentive();
 
+function validateMaxGrades(lengthGrades) {
+    return lengthGrades == 8;
+}
+
+function validateMinGrades(miniLimmit) {
+    return miniLimmit == 1;
+}
+
 function createGrade() {
     let mainDiv = document.createElement('div');
     mainDiv.classList.add('grade-content');
-
-    let baseDiv = document.getElementById('grades');
+    let grades = document.getElementById('grades');
+    let inLimmit = validateMaxGrades(grades.children.length);
+    if (inLimmit == true) {
+        return alert('Número máximo de notas atingido');
+    }
     let labelGrade = document.createElement('label');
-    labelGrade.innerHTML = baseDiv.children.length + 1 + 'ª nota';
-    let addGrade = baseDiv.children.length
+    labelGrade.innerHTML = grades.children.length + 1 + 'ª nota';
+    let addGrade = grades.children.length;
     labelGrade.classList.add('grade-item');
     let inputGrade = document.createElement('input');
-    // inputGrade.onchange.
+    inputGrade.type = 'number';
+    inputGrade.onchange = function () {
+        validateGrade(inputGrade);
+    };
     inputGrade.placeholder = "0 a 10";
     inputGrade.classList.add('grade-item-one');
     mainDiv.append(labelGrade, inputGrade);
-    // mainDiv.append(input);
-    baseDiv.append(mainDiv);
-    while (addGrade > 7) {
-        alert('Número máximo de notas atingido');
-        return removeGrade();
-    }
+    grades.append(mainDiv);
 }
 
+
 function removeGrade() {
+    let minLimmit = validateMinGrades(grades.children.length);
+    if (minLimmit == true) {
+        return alert('Número mínimo de notas atingido');
+    }
     let element = document.querySelector('.grade > *:last-child');
     element.remove();
 }

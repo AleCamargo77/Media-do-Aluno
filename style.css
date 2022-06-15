@@ -75,7 +75,7 @@ header .range {
 .btn-operations {
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
 }
 button {
     height: 2.5rem;
