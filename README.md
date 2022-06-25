@@ -14,10 +14,11 @@ A Calculadora de Notas tem como finalidade informar a média informada pelo usu�
 
 ## 🤔 Funcionalidades e como acessar o projeto ?
 
-Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página, no CSS utilizado resursos para estilização e efeitos, e por fim trabalhado com funções e variáveis, manipulação de DOM e condições dentro do Java Script.
+Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página, no CSS utilizado resursos como flexbox para estilização e efeitos, e por fim trabalhado com funções e variáveis, manipulação de DOM e condições dentro do Java Script.
   
  Interface:
   
+![Calculadora de Notas](https://user-images.githubusercontent.com/105398640/175752846-10f4f463-b4a4-4a74-8451-29aeed6a14ab.jpg)
 
 
 <p dir="auto">Link para acessar o projeto: <a href="https://alecamargo77.github.io/Media-do-Aluno/" rel="nofollow"> Calculadora de Notas </a></p>
