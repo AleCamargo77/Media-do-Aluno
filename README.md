@@ -14,7 +14,7 @@ A Calculadora de Notas tem como finalidade informar a média informada pelo usu�
 
 ## 🤔 Funcionalidades e como acessar o projeto ?
 
-Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página, no CSS utilizado resursos como flexbox para estilização e efeitos, e por fim trabalhado com funções e variáveis, manipulação de DOM e condições dentro do Java Script.
+Inicialmente utilizado HTML e suas tags semânticas para montagem do corpo da página. No CSS, utilizado recursos para estilização e efeitos animados para garantir uma experiência ao usuário mais eficaz. Além de criar a aplicação de maneira responsiva, utilizando o processo de Mobile First. E por fim, trabalhado com funções, manipulação de DOM e condições dentro do Java Script.
   
  Interface:
   
